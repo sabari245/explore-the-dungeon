@@ -1,0 +1,220 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract ERC20",
+						"name": "_token",
+						"type": "address"
+					},
+					{
+						"internalType": "contract Vault",
+						"name": "_vault",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_dungeonEntryFee",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_dungeonId",
+						"type": "uint256"
+					}
+				],
+				"name": "attemptDungeon",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_reward",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_key",
+						"type": "uint256"
+					}
+				],
+				"name": "createDungeon",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "dungeonEntryFee",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "dungeons",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "reward",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dungeonId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum GameContract.DungeonStatus",
+						"name": "status",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "key",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_dungeonId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_key",
+						"type": "uint256"
+					}
+				],
+				"name": "finishDungeon",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "token",
+				"outputs": [
+					{
+						"internalType": "contract ERC20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "vault",
+				"outputs": [
+					{
+						"internalType": "contract Vault",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/game.sol": "GameContract"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/erc20.sol": {
+			"keccak256": "0x5da72ab3eb35a5f30509770eecdef0c8f1bf158939951106538805fe78a81663",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9127b5307db58c78a9ed9f7486e9600deb982301c7a059b590d7415717e6d50d",
+				"dweb:/ipfs/QmXBGwNSnYCXJMUqRHCYyctFHK71jvFEyjzHBfkLwuXa3n"
+			]
+		},
+		"contracts/game.sol": {
+			"keccak256": "0x02df5f9051efe866086d5c034bc733383a4c86bf9b17432254064f32859afb03",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://abad08a435b8fcba53b4bcc77af5df3bf569a4cb3d5596d4ced8fe50237c16c2",
+				"dweb:/ipfs/QmaQX6QfTpPFpVFkV6zqTBW3x7Q5DKRqH27iYkXnDudydw"
+			]
+		},
+		"contracts/vault.sol": {
+			"keccak256": "0xd76bcb651f87068a44eaf87001f7daceff221caefae91744a4d0dc78434549bc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://dffc33dbb6dd5db0f09d0f98b1b3c1cfe4273590c99955dbd686d5fd625d59be",
+				"dweb:/ipfs/QmPBVpXNUo4uwWHdEk7zzX4YDTKgCkPrUBPYovMsbNcZ4m"
+			]
+		}
+	},
+	"version": 1
+}

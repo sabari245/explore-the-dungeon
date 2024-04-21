@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/game.sol": "Name"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/game.sol": {
+			"keccak256": "0x988c87c774673faaf7759a3f6548461c164c37f65be64182781c158b797c43d1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://861e85bd0bee0687b33f46eb7314c17bb156c6125ce8f34e5fe81442b7b483b8",
+				"dweb:/ipfs/QmQXc5U7WhAyHTemys3MWVGrTFKS4BFGxj98wVHvZrttGH"
+			]
+		}
+	},
+	"version": 1
+}
